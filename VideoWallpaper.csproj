@@ -6,12 +6,17 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="LibVLCSharp" Version="3.8.5" />
     <PackageReference Include="LibVLCSharp.WPF" Version="3.8.5" />
     <PackageReference Include="VideoLAN.LibVLC.Windows" Version="3.0.21" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icon.ico" />
   </ItemGroup>
 
 </Project>

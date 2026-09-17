@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Video Wallpaper" Height="360" Width="480"
         ResizeMode="CanMinimize"
+        Icon="icon.ico"
         Background="#1E1E1E">
     <Window.Resources>
         <Style TargetType="Button">
