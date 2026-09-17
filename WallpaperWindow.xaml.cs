@@ -48,9 +48,8 @@ namespace VideoWallpaper
                 _hwnd = new WindowInteropHelper(this).Handle;
             };
 
-            // Re-assert the window's position on a timer. On Windows builds where
-            // reparenting into Progman/WorkerW is blocked or reverted, this keeps
-            // the video pinned behind other windows via z-order alone.
+            // Re-assert the window's bottom-most z-order position periodically,
+            // since opening new windows can otherwise end up stacking above it.
             _reattachTimer = new DispatcherTimer(DispatcherPriority.ApplicationIdle)
             {
                 Interval = TimeSpan.FromSeconds(2)
